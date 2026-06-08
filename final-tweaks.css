@@ -10,15 +10,40 @@
   display: none;
 }
 
-.paymentTrack,
-.footerDepositCarousel .paymentTrack {
-  min-width: 220vw;
-  justify-content: space-around;
+.paymentBar,
+.footerDepositCarousel {
+  overflow: hidden;
 }
 
-.paymentBar {
-  padding-left: 0;
-  padding-right: 0;
+.paymentBar .paymentMarquee,
+.footerDepositCarousel .paymentMarquee {
+  justify-content: center;
+}
+
+.paymentBar .paymentTrack,
+.footerDepositCarousel .paymentTrack {
+  min-width: max-content;
+  justify-content: flex-start;
+  gap: 28px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.paymentBar .paymentTrack img,
+.footerDepositCarousel .paymentTrack img {
+  flex: 0 0 auto;
+}
+
+.paymentBar .paymentTrack {
+  animation-duration: 22s;
+}
+
+.paymentBar .paymentTrack--reverse {
+  animation-duration: 20s;
+}
+
+.footerDepositCarousel .paymentTrack {
+  animation-duration: 26s;
 }
 
 @media (max-width: 640px) {
@@ -188,7 +213,6 @@
 }
 
 .footerDepositCarousel {
-  overflow: hidden;
   margin: 4px 0;
 }
 
@@ -298,9 +322,11 @@
 }
 
 @media (max-width: 640px) {
-  .paymentTrack,
+  .paymentBar .paymentTrack,
   .footerDepositCarousel .paymentTrack {
-    min-width: 260vw;
+    gap: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
   .studioCarousel::before,
