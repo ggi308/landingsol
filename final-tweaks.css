@@ -38,12 +38,12 @@
   min-width: max-content;
   gap: 0;
   padding: 0;
-  animation: seamlessMarquee 28s linear infinite;
+  animation: seamlessMarquee 34s linear infinite;
   will-change: transform;
 }
 
 .footerDepositCarousel .paymentTrack {
-  animation-duration: 30s;
+  animation-duration: 36s;
 }
 
 .seamlessTrack--reverse,
@@ -75,11 +75,11 @@
 
 @keyframes seamlessMarquee {
   from { transform: translate3d(0, 0, 0); }
-  to { transform: translate3d(-50%, 0, 0); }
+  to { transform: translate3d(-25%, 0, 0); }
 }
 
 @keyframes seamlessMarqueeReverse {
-  from { transform: translate3d(-50%, 0, 0); }
+  from { transform: translate3d(-25%, 0, 0); }
   to { transform: translate3d(0, 0, 0); }
 }
 
@@ -142,7 +142,7 @@
 }
 
 .studioTrack--bottom {
-  animation-duration: 26s;
+  animation-duration: 32s;
 }
 
 .studioTrack img {
@@ -350,7 +350,7 @@
 
   .studioTrack,
   .studioTrack--bottom {
-    animation-duration: 24s;
+    animation-duration: 28s;
   }
 
   .studioTrack img {
