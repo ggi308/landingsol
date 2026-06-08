@@ -590,7 +590,37 @@ h1 span,
     grid-template-columns: 1fr;
   }
 
-  .gameGrid { grid-template-columns: repeat(2, 1fr); }
+  .gameGrid {
+    display: flex;
+    grid-template-columns: none;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-right: -14px;
+    margin-left: -14px;
+    padding: 4px 14px 18px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .gameGrid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gameGrid img {
+    flex: 0 0 68%;
+    width: 68%;
+    max-width: 265px;
+    scroll-snap-align: start;
+  }
+
   .studioGrid { grid-template-columns: repeat(2, 1fr); }
   .footer__top { flex-direction: column; }
+}
+
+@media (max-width: 380px) {
+  .gameGrid img {
+    flex-basis: 76%;
+    width: 76%;
+  }
 }
