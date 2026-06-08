@@ -2,6 +2,25 @@
   overflow: hidden;
 }
 
+.gameGrid {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+.gameGrid img:nth-child(3) {
+  display: none;
+}
+
+.paymentTrack,
+.footerDepositCarousel .paymentTrack {
+  min-width: 220vw;
+  justify-content: space-around;
+}
+
+.paymentBar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @media (max-width: 640px) {
   .gamesContainer {
     width: 100%;
@@ -182,6 +201,19 @@
   height: 46px;
 }
 
+.footer__inner,
+.footer__top,
+.stores,
+.responsible {
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer__top {
+  flex-direction: column;
+}
+
 .legal,
 .copyright {
   max-width: 1040px;
@@ -196,6 +228,12 @@
 
 .copyright {
   margin-top: 10px;
+  color: transparent;
+  font-size: 0;
+}
+
+.copyright::after {
+  content: "© 2026 Todos los derechos reservados | Solcasino";
   color: #ffffff;
   font-size: 15px;
 }
@@ -260,6 +298,11 @@
 }
 
 @media (max-width: 640px) {
+  .paymentTrack,
+  .footerDepositCarousel .paymentTrack {
+    min-width: 260vw;
+  }
+
   .studioCarousel::before,
   .studioCarousel::after {
     width: 28px;
