@@ -51,15 +51,7 @@
 }
 
 .stepNumber {
-  position: absolute;
-  top: 18px;
-  right: 24px;
-  color: rgba(248, 247, 0, 0.14);
-  font-size: 92px;
-  font-weight: 700;
-  line-height: 0.78;
-  letter-spacing: -0.05em;
-  z-index: -1;
+  display: none;
 }
 
 .stepIconWrap {
@@ -93,6 +85,16 @@
   max-width: 245px;
   margin: 0 auto;
   color: #dfdcff;
+  font-size: 22px;
+  line-height: 1.15;
+}
+
+.stepCard:nth-child(3) p {
+  font-size: 0;
+}
+
+.stepCard:nth-child(3) p::after {
+  content: "Activa tu bono y empieza a jugar.";
   font-size: 22px;
   line-height: 1.15;
 }
@@ -134,10 +136,6 @@
     padding: 34px 24px 30px;
   }
 
-  .stepNumber {
-    font-size: 76px;
-  }
-
   .stepIconWrap {
     width: 96px;
     height: 96px;
@@ -153,7 +151,8 @@
     font-size: 34px;
   }
 
-  .stepCard p {
+  .stepCard p,
+  .stepCard:nth-child(3) p::after {
     font-size: 20px;
   }
 }
