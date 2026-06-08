@@ -14,26 +14,20 @@
   }
 
   .gameGrid {
-    display: flex !important;
-    gap: 14px !important;
-    overflow-x: auto;
-    overflow-y: hidden;
-    margin: 0;
-    padding: 4px 14px 18px;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .gameGrid::-webkit-scrollbar {
-    display: none;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+    width: min(100% - 28px, 1180px);
+    margin: 0 auto;
+    padding: 0;
+    overflow: visible;
   }
 
   .gameGrid img {
-    flex: 0 0 72%;
-    width: 72%;
-    max-width: 280px;
-    border-radius: 20px;
-    scroll-snap-align: center;
+    width: 100%;
+    max-width: none;
+    border-radius: 18px;
+    scroll-snap-align: unset;
   }
 }
 
@@ -188,8 +182,22 @@
   height: 46px;
 }
 
-.legal {
+.legal,
+.copyright {
+  max-width: 1040px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: center;
   text-transform: none;
+}
+
+.copyright {
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 15px;
 }
 
 .stickyCta {
