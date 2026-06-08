@@ -123,7 +123,7 @@
 
         <div class="promoGrid">
           <article class="promoCard promoCard--1">
-            <img src="assets/elementos_landing/promo-bienvenida.png?v=no-badge-1" alt="Hasta 1.800€ + 50 Tiradas Gratis" />
+            <img src="assets/elementos_landing/promo-bienvenida.png?v=no-badge-2" alt="Hasta 1.800€ + 50 Tiradas Gratis" />
             <div class="promoText">
               <h3>Hasta 1.800€ + 50 Tiradas Gratis</h3>
               <p>Activa tu bono y empieza con ventaja.</p>
@@ -335,29 +335,24 @@
     const stickyCta = document.querySelector('.stickyCta');
     const heroSection = document.querySelector('.hero');
     const footerSection = document.querySelector('.footer');
-    let heroVisible = true;
-    let footerVisible = false;
 
     function updateStickyCta() {
-      const shouldShow = !heroVisible && !footerVisible;
+      if (!stickyCta || !heroSection || !footerSection) return;
+
+      const scrollY = window.scrollY || window.pageYOffset;
+      const heroTrigger = heroSection.offsetTop + Math.min(heroSection.offsetHeight * 0.55, 420);
+      const footerTop = footerSection.getBoundingClientRect().top + scrollY;
+      const nearFooter = scrollY + window.innerHeight > footerTop - 24;
+      const shouldShow = scrollY > heroTrigger && !nearFooter;
+
       stickyCta.classList.toggle('is-visible', shouldShow);
       stickyCta.setAttribute('aria-hidden', shouldShow ? 'false' : 'true');
     }
 
-    if (stickyCta && heroSection && footerSection) {
-      const heroObserver = new IntersectionObserver(([entry]) => {
-        heroVisible = entry.isIntersecting;
-        updateStickyCta();
-      }, { threshold: 0.08 });
-
-      const footerObserver = new IntersectionObserver(([entry]) => {
-        footerVisible = entry.isIntersecting;
-        updateStickyCta();
-      }, { threshold: 0.01 });
-
-      heroObserver.observe(heroSection);
-      footerObserver.observe(footerSection);
-    }
+    window.addEventListener('scroll', updateStickyCta, { passive: true });
+    window.addEventListener('resize', updateStickyCta);
+    window.addEventListener('load', updateStickyCta);
+    updateStickyCta();
   </script>
 </body>
 </html>
