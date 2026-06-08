@@ -102,6 +102,11 @@ h1 span,
   text-shadow: 0 0 28px rgba(248, 247, 0, 0.35);
 }
 
+.heroWhite {
+  color: #ffffff;
+  text-shadow: none;
+}
+
 .heroBadges {
   display: flex;
   flex-wrap: wrap;
@@ -204,16 +209,16 @@ h1 span,
 
 .paymentBar {
   overflow: hidden;
-  padding: 28px 0 30px;
+  padding: 24px 0 28px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background: rgba(5, 5, 18, 0.96);
 }
 
 .paymentTitle {
-  margin: 0 0 16px;
+  margin: 0 0 10px;
   color: var(--yellow);
-  font-size: clamp(30px, 3vw, 42px);
+  font-size: clamp(22px, 2.2vw, 30px);
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.04em;
@@ -231,7 +236,7 @@ h1 span,
 }
 
 .paymentMarquee + .paymentMarquee {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .paymentMarquee::before,
@@ -240,19 +245,19 @@ h1 span,
   position: absolute;
   top: 0;
   z-index: 2;
-  width: 120px;
+  width: 58px;
   height: 100%;
   pointer-events: none;
 }
 
 .paymentMarquee::before {
   left: 0;
-  background: linear-gradient(90deg, rgba(5, 5, 18, 1), rgba(5, 5, 18, 0));
+  background: linear-gradient(90deg, rgba(5, 5, 18, 0.7), rgba(5, 5, 18, 0));
 }
 
 .paymentMarquee::after {
   right: 0;
-  background: linear-gradient(270deg, rgba(5, 5, 18, 1), rgba(5, 5, 18, 0));
+  background: linear-gradient(270deg, rgba(5, 5, 18, 0.7), rgba(5, 5, 18, 0));
 }
 
 .paymentTrack {
@@ -537,16 +542,29 @@ h1 span,
   }
 
   .paymentBar {
-    padding: 22px 0 24px;
+    padding: 18px 0 22px;
   }
 
   .paymentTitle {
-    margin-bottom: 12px;
-    font-size: 30px;
+    margin-bottom: 8px;
+    font-size: 24px;
   }
 
   .paymentMarquee {
     min-height: 62px;
+  }
+
+  .paymentMarquee::before,
+  .paymentMarquee::after {
+    width: 20px;
+  }
+
+  .paymentMarquee::before {
+    background: linear-gradient(90deg, rgba(5, 5, 18, 0.38), rgba(5, 5, 18, 0));
+  }
+
+  .paymentMarquee::after {
+    background: linear-gradient(270deg, rgba(5, 5, 18, 0.38), rgba(5, 5, 18, 0));
   }
 
   .paymentTrack {
