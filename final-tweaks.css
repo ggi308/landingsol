@@ -11,22 +11,33 @@
 }
 
 .paymentBar,
-.footerDepositCarousel {
+.footerDepositCarousel,
+.studioCarousel {
   overflow: hidden;
+}
+
+.paymentBar .paymentMarquee--bottom {
+  display: none;
 }
 
 .paymentBar .paymentMarquee,
 .footerDepositCarousel .paymentMarquee {
   justify-content: center;
+  min-height: 76px;
+}
+
+.paymentBar .paymentMarquee + .paymentMarquee {
+  margin-top: 0;
 }
 
 .paymentBar .paymentTrack,
 .footerDepositCarousel .paymentTrack {
   min-width: max-content;
   justify-content: flex-start;
-  gap: 28px;
-  padding-left: 28px;
-  padding-right: 28px;
+  gap: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  animation-duration: 20s;
 }
 
 .paymentBar .paymentTrack img,
@@ -34,16 +45,8 @@
   flex: 0 0 auto;
 }
 
-.paymentBar .paymentTrack {
-  animation-duration: 22s;
-}
-
-.paymentBar .paymentTrack--reverse {
-  animation-duration: 20s;
-}
-
 .footerDepositCarousel .paymentTrack {
-  animation-duration: 26s;
+  animation-duration: 24s;
 }
 
 @media (max-width: 640px) {
@@ -77,9 +80,8 @@
 
 .studioCarousel {
   position: relative;
-  overflow: hidden;
   display: grid;
-  gap: 18px;
+  gap: 16px;
   padding: 0 0 6px;
 }
 
@@ -89,7 +91,7 @@
   position: absolute;
   top: 0;
   z-index: 2;
-  width: 110px;
+  width: 90px;
   height: 100%;
   pointer-events: none;
 }
@@ -107,15 +109,17 @@
 .studioTrack {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 18px;
   width: max-content;
-  padding: 0 22px;
-  animation: studioScroll 34s linear infinite;
+  min-width: max-content;
+  padding: 0 18px;
+  animation: studioScroll 28s linear infinite;
 }
 
 .studioTrack--bottom {
   animation-name: studioScrollReverse;
-  animation-duration: 30s;
+  animation-duration: 26s;
 }
 
 .studioTrack img {
