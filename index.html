@@ -7,8 +7,8 @@
   <meta name="description" content="Landing page promocional de Sol Casino." />
   <link rel="stylesheet" href="style.css?v=hero-7" />
   <link rel="stylesheet" href="steps.css?v=steps-1" />
-  <link rel="stylesheet" href="promos.css?v=promos-2" />
-  <link rel="stylesheet" href="final-tweaks.css?v=final-1" />
+  <link rel="stylesheet" href="promos.css?v=promos-3" />
+  <link rel="stylesheet" href="final-tweaks.css?v=final-2" />
 </head>
 <body>
   <main>
@@ -135,31 +135,31 @@
 
         <div class="promoGrid">
           <article class="promoCard promoCard--1">
-            <img src="assets/elementos_landing/promo-bienvenida.png" alt="Hasta 1.800€ + 50 Tiradas Gratis" />
+            <img src="assets/elementos_landing/promo-bienvenida.png?v=no-badge-1" alt="Hasta 1.800€ + 50 Tiradas Gratis" />
             <div class="promoText">
               <h3>Hasta 1.800€ + 50 Tiradas Gratis</h3>
-              <p>Activa tu bono y empieza con ventaja</p>
+              <p>Activa tu bono y empieza con ventaja.</p>
             </div>
           </article>
           <article class="promoCard">
             <img src="assets/elementos_landing/promo - refgistro-app.png" alt="Saldo Extra Semanal 150%" />
             <div class="promoText">
               <h3>Saldo Extra Semanal 150%</h3>
-              <p>Hasta 600€ cada semana</p>
+              <p>Hasta 600€ cada semana.</p>
             </div>
           </article>
           <article class="promoCard">
             <img src="assets/elementos_landing/promo-diaria.png" alt="Promos Cada Día" />
             <div class="promoText">
               <h3>Promos Cada Día</h3>
-              <p>Bonos, tiradas y recompensas</p>
+              <p>Bonos, tiradas y recompensas.</p>
             </div>
           </article>
           <article class="promoCard">
             <img src="assets/elementos_landing/promo - 4.png" alt="Torneo Diario" />
             <div class="promoText">
               <h3>Torneo Diario</h3>
-              <p>1.000€ en premios cada día</p>
+              <p>1.000€ en premios cada día.</p>
             </div>
           </article>
         </div>
@@ -230,26 +230,22 @@
           <h2>¿Por qué elegir Solcasino?</h2>
         </div>
 
-        <div class="whyGrid">
-          <article class="infoCard">
+        <div class="whyGrid whyGridCompact">
+          <article class="infoCard whyCard">
             <img src="assets/iconos/iconos-promos.png" alt="" />
             <h3>Promociones exclusivas</h3>
-            <p>Bonos, tiradas gratis y ofertas especiales para seguir jugando.</p>
           </article>
-          <article class="infoCard">
+          <article class="infoCard whyCard">
             <img src="assets/iconos/iconos-slots.png" alt="" />
             <h3>+10.000 juegos para elegir</h3>
-            <p>Juegos para todos los estilos, desde slots hasta casino en vivo.</p>
           </article>
-          <article class="infoCard">
+          <article class="infoCard whyCard">
             <img src="assets/iconos/iconos-copa.png" alt="" />
-            <h3>Estudios líderes</h3>
-            <p>Encuentra los estudios más populares</p>
+            <h3>+30 Años de experiencia</h3>
           </article>
-          <article class="infoCard">
+          <article class="infoCard whyCard">
             <img src="assets/iconos/iconos-rayo.png" alt="" />
             <h3>Rápido y sencillo</h3>
-            <p>Una experiencia mejorada para jugar desde cualquier dispositivo.</p>
           </article>
         </div>
       </div>
@@ -257,10 +253,9 @@
 
     <section class="finalCta finalCtaPsd" id="registro">
       <div class="container finalCtaCard">
-        <div>
-          <p class="eyebrow">Empieza hoy</p>
-          <h2>Tu bono te espera</h2>
-          <p>Hasta 1.800€ + 50 tiradas gratis para empezar con ventaja.</p>
+        <div class="finalCtaOffer">
+          <strong>Hasta 1.800€ + 50 tiradas gratis</strong>
+          <span>Empieza a jugar con ventaja</span>
         </div>
         <a href="#" class="btn finalGreenBtn">Regístrate ahora</a>
       </div>
@@ -317,7 +312,6 @@
   <div class="stickyCta" aria-hidden="true">
     <div class="stickyCta__copy">
       <strong>Hasta 1.800€ + 50 tiradas gratis</strong>
-      <span>+ 5€ por registrarte en la app</span>
     </div>
     <a href="#registro" class="stickyCta__button">Regístrate ahora</a>
   </div>
@@ -325,14 +319,29 @@
   <script>
     const stickyCta = document.querySelector('.stickyCta');
     const heroSection = document.querySelector('.hero');
+    const footerSection = document.querySelector('.footer');
+    let heroVisible = true;
+    let footerVisible = false;
 
-    if (stickyCta && heroSection) {
-      const observer = new IntersectionObserver(([entry]) => {
-        stickyCta.classList.toggle('is-visible', !entry.isIntersecting);
-        stickyCta.setAttribute('aria-hidden', entry.isIntersecting ? 'true' : 'false');
+    function updateStickyCta() {
+      const shouldShow = !heroVisible && !footerVisible;
+      stickyCta.classList.toggle('is-visible', shouldShow);
+      stickyCta.setAttribute('aria-hidden', shouldShow ? 'false' : 'true');
+    }
+
+    if (stickyCta && heroSection && footerSection) {
+      const heroObserver = new IntersectionObserver(([entry]) => {
+        heroVisible = entry.isIntersecting;
+        updateStickyCta();
       }, { threshold: 0.08 });
 
-      observer.observe(heroSection);
+      const footerObserver = new IntersectionObserver(([entry]) => {
+        footerVisible = entry.isIntersecting;
+        updateStickyCta();
+      }, { threshold: 0.01 });
+
+      heroObserver.observe(heroSection);
+      footerObserver.observe(footerSection);
     }
   </script>
 </body>
