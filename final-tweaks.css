@@ -81,6 +81,7 @@
 .studioCarousel {
   position: relative;
   display: grid;
+  justify-items: center;
   gap: 16px;
   padding: 0 0 6px;
 }
@@ -110,16 +111,18 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 18px;
+  gap: 22px;
   width: max-content;
   min-width: max-content;
-  padding: 0 18px;
-  animation: studioScroll 28s linear infinite;
+  margin: 0 auto;
+  padding: 0 22px;
+  animation: studioScroll 26s linear infinite;
+  will-change: transform;
 }
 
 .studioTrack--bottom {
   animation-name: studioScrollReverse;
-  animation-duration: 26s;
+  animation-duration: 24s;
 }
 
 .studioTrack img {
