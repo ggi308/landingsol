@@ -204,18 +204,34 @@ h1 span,
 
 .paymentBar {
   overflow: hidden;
+  padding: 28px 0 30px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background: rgba(5, 5, 18, 0.96);
+}
+
+.paymentTitle {
+  margin: 0 0 16px;
+  color: var(--yellow);
+  font-size: clamp(30px, 3vw, 42px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .paymentMarquee {
   position: relative;
   overflow: hidden;
   width: 100%;
-  min-height: 112px;
+  min-height: 72px;
   display: flex;
   align-items: center;
+}
+
+.paymentMarquee + .paymentMarquee {
+  margin-top: 10px;
 }
 
 .paymentMarquee::before,
@@ -242,10 +258,15 @@ h1 span,
 .paymentTrack {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 24px;
   width: max-content;
-  padding: 24px 26px;
-  animation: paymentScroll 34s linear infinite;
+  padding: 10px 24px;
+  animation: paymentScroll 30s linear infinite;
+}
+
+.paymentTrack--reverse {
+  animation-name: paymentScrollReverse;
+  animation-duration: 28s;
 }
 
 .paymentTrack:hover {
@@ -254,18 +275,23 @@ h1 span,
 
 .paymentTrack img,
 .footerPayments img {
-  width: 122px;
-  height: 48px;
+  width: 132px;
+  height: 52px;
   object-fit: contain;
-  padding: 10px 16px;
+  padding: 11px 17px;
   flex: 0 0 auto;
-  border-radius: 13px;
+  border-radius: 14px;
   background: #fff;
 }
 
 @keyframes paymentScroll {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
+}
+
+@keyframes paymentScrollReverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
 }
 
 .paymentBar__items,
@@ -510,14 +536,27 @@ h1 span,
     font-size: 24px;
   }
 
+  .paymentBar {
+    padding: 22px 0 24px;
+  }
+
+  .paymentTitle {
+    margin-bottom: 12px;
+    font-size: 30px;
+  }
+
   .paymentMarquee {
-    min-height: 92px;
+    min-height: 62px;
   }
 
   .paymentTrack {
     gap: 18px;
-    padding: 18px;
-    animation-duration: 26s;
+    padding: 8px 18px;
+    animation-duration: 24s;
+  }
+
+  .paymentTrack--reverse {
+    animation-duration: 22s;
   }
 
   .paymentTrack img {
