@@ -86,43 +86,57 @@
 }
 
 @media (max-width: 640px) {
+  .promoGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+
   .promoCard,
   .promoCard img {
-    min-height: 360px;
+    min-height: 218px;
+    border-radius: 18px;
   }
 
   .promoText {
-    left: 13px;
-    right: 13px;
-    bottom: 12px;
-    height: 118px;
-    padding: 13px 14px 12px;
+    left: 9px;
+    right: 9px;
+    bottom: 9px;
+    height: 82px;
+    padding: 10px 10px 9px;
+    border-radius: 13px;
   }
 
   .promoText h3 {
-    font-size: 26px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 0.92;
   }
 
   .promoText p {
-    font-size: 17px;
+    font-size: 13px;
+    line-height: 1;
   }
 }
 
 @media (max-width: 380px) {
+  .promoGrid {
+    gap: 10px !important;
+  }
+
   .promoCard,
   .promoCard img {
-    min-height: 335px;
+    min-height: 202px;
   }
 
   .promoText {
-    height: 112px;
+    height: 78px;
   }
 
   .promoText h3 {
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .promoText p {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
