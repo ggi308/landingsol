@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css?v=hero-7" />
   <link rel="stylesheet" href="steps.css?v=steps-1" />
   <link rel="stylesheet" href="promos.css?v=promos-3" />
-  <link rel="stylesheet" href="final-tweaks.css?v=final-4" />
+  <link rel="stylesheet" href="final-tweaks.css?v=final-5" />
 </head>
 <body>
   <main>
@@ -324,6 +324,14 @@
   </div>
 
   <script>
+    document.querySelectorAll('.seamlessTrack').forEach((track) => {
+      const groups = Array.from(track.children);
+      if (groups.length === 2) {
+        track.appendChild(groups[0].cloneNode(true));
+        track.appendChild(groups[1].cloneNode(true));
+      }
+    });
+
     const stickyCta = document.querySelector('.stickyCta');
     const heroSection = document.querySelector('.hero');
     const footerSection = document.querySelector('.footer');
