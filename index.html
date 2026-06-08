@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css?v=hero-7" />
   <link rel="stylesheet" href="steps.css?v=steps-1" />
   <link rel="stylesheet" href="promos.css?v=promos-2" />
+  <link rel="stylesheet" href="final-tweaks.css?v=final-1" />
 </head>
 <body>
   <main>
@@ -166,7 +167,7 @@
     </section>
 
     <section class="section games">
-      <div class="container">
+      <div class="container gamesContainer">
         <div class="sectionTitle">
           <p class="eyebrow">Juegos</p>
           <h2>Los mejores juegos</h2>
@@ -188,20 +189,36 @@
           <p class="eyebrow">Estudios</p>
           <h2>Los mejores estudios</h2>
         </div>
+      </div>
 
-        <div class="studioGrid">
+      <div class="studioCarousel" aria-label="Estudios disponibles">
+        <div class="studioTrack studioTrack--top">
           <img src="assets/estudios/evolution.png" alt="Evolution" />
           <img src="assets/estudios/pragmatic.png" alt="Pragmatic Play" />
           <img src="assets/estudios/playtech.png" alt="Playtech" />
           <img src="assets/estudios/netent.png" alt="NetEnt" />
           <img src="assets/estudios/play-n-go.png" alt="Play'n GO" />
           <img src="assets/estudios/red-tiger.png" alt="Red Tiger" />
+          <img src="assets/estudios/evolution.png" alt="Evolution" aria-hidden="true" />
+          <img src="assets/estudios/pragmatic.png" alt="Pragmatic Play" aria-hidden="true" />
+          <img src="assets/estudios/playtech.png" alt="Playtech" aria-hidden="true" />
+          <img src="assets/estudios/netent.png" alt="NetEnt" aria-hidden="true" />
+          <img src="assets/estudios/play-n-go.png" alt="Play'n GO" aria-hidden="true" />
+          <img src="assets/estudios/red-tiger.png" alt="Red Tiger" aria-hidden="true" />
+        </div>
+        <div class="studioTrack studioTrack--bottom">
           <img src="assets/estudios/relax.png" alt="Relax Gaming" />
           <img src="assets/estudios/hacksaw.png" alt="Hacksaw" />
           <img src="assets/estudios/amusnet.png" alt="Amusnet" />
           <img src="assets/estudios/playson.png" alt="Playson" />
           <img src="assets/estudios/spribe.png" alt="Spribe" />
           <img src="assets/estudios/greentube.png" alt="Greentube" />
+          <img src="assets/estudios/relax.png" alt="Relax Gaming" aria-hidden="true" />
+          <img src="assets/estudios/hacksaw.png" alt="Hacksaw" aria-hidden="true" />
+          <img src="assets/estudios/amusnet.png" alt="Amusnet" aria-hidden="true" />
+          <img src="assets/estudios/playson.png" alt="Playson" aria-hidden="true" />
+          <img src="assets/estudios/spribe.png" alt="Spribe" aria-hidden="true" />
+          <img src="assets/estudios/greentube.png" alt="Greentube" aria-hidden="true" />
         </div>
       </div>
     </section>
@@ -221,31 +238,31 @@
           </article>
           <article class="infoCard">
             <img src="assets/iconos/iconos-slots.png" alt="" />
-            <h3>Gran selección</h3>
+            <h3>+10.000 juegos para elegir</h3>
             <p>Juegos para todos los estilos, desde slots hasta casino en vivo.</p>
           </article>
           <article class="infoCard">
             <img src="assets/iconos/iconos-copa.png" alt="" />
             <h3>Estudios líderes</h3>
-            <p>Contenido de proveedores reconocidos en el sector del juego online.</p>
+            <p>Encuentra los estudios más populares</p>
           </article>
           <article class="infoCard">
             <img src="assets/iconos/iconos-rayo.png" alt="" />
             <h3>Rápido y sencillo</h3>
-            <p>Una experiencia optimizada para jugar desde cualquier dispositivo.</p>
+            <p>Una experiencia mejorada para jugar desde cualquier dispositivo.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="finalCta" id="registro">
-      <div class="container finalCta__inner">
+    <section class="finalCta finalCtaPsd" id="registro">
+      <div class="container finalCtaCard">
         <div>
           <p class="eyebrow">Empieza hoy</p>
           <h2>Tu bono te espera</h2>
-          <p>Regístrate ahora y descubre todo lo que Solcasino tiene preparado para ti.</p>
+          <p>Hasta 1.800€ + 50 tiradas gratis para empezar con ventaja.</p>
         </div>
-        <a href="#" class="btn">Regístrate ahora</a>
+        <a href="#" class="btn finalGreenBtn">Regístrate ahora</a>
       </div>
     </section>
   </main>
@@ -262,13 +279,27 @@
         <img src="assets/elementos_landing/GOOGLE-PLAY.png" alt="Google Play" />
       </div>
 
-      <div class="footerPayments">
-        <img src="assets/medios_de_pago/VISA.png" alt="Visa" />
-        <img src="assets/medios_de_pago/MASTERCARD.png" alt="Mastercard" />
-        <img src="assets/medios_de_pago/BIZUM.png" alt="Bizum" />
-        <img src="assets/medios_de_pago/PAYPAL.png" alt="PayPal" />
-        <img src="assets/medios_de_pago/SKRILL.png" alt="Skrill" />
-        <img src="assets/medios_de_pago/NETELLER.png" alt="Neteller" />
+      <div class="footerDepositCarousel" aria-label="Métodos de pago disponibles">
+        <div class="paymentMarquee paymentMarquee--top">
+          <div class="paymentTrack">
+            <img src="assets/medios_de_pago/VISA.png" alt="Visa" />
+            <img src="assets/medios_de_pago/MASTERCARD.png" alt="Mastercard" />
+            <img src="assets/medios_de_pago/BIZUM.png" alt="Bizum" />
+            <img src="assets/medios_de_pago/PAYPAL.png" alt="PayPal" />
+            <img src="assets/medios_de_pago/SKRILL.png" alt="Skrill" />
+            <img src="assets/medios_de_pago/NETELLER.png" alt="Neteller" />
+            <img src="assets/medios_de_pago/PAYSAFE.png" alt="Paysafe" />
+            <img src="assets/medios_de_pago/TRANSFERENCIA.png" alt="Transferencia" />
+            <img src="assets/medios_de_pago/VISA.png" alt="Visa" aria-hidden="true" />
+            <img src="assets/medios_de_pago/MASTERCARD.png" alt="Mastercard" aria-hidden="true" />
+            <img src="assets/medios_de_pago/BIZUM.png" alt="Bizum" aria-hidden="true" />
+            <img src="assets/medios_de_pago/PAYPAL.png" alt="PayPal" aria-hidden="true" />
+            <img src="assets/medios_de_pago/SKRILL.png" alt="Skrill" aria-hidden="true" />
+            <img src="assets/medios_de_pago/NETELLER.png" alt="Neteller" aria-hidden="true" />
+            <img src="assets/medios_de_pago/PAYSAFE.png" alt="Paysafe" aria-hidden="true" />
+            <img src="assets/medios_de_pago/TRANSFERENCIA.png" alt="Transferencia" aria-hidden="true" />
+          </div>
+        </div>
       </div>
 
       <div class="responsible">
@@ -279,8 +310,30 @@
         <img src="assets/juego_responsable/autoprohibicion.jpg" alt="Autoprohibición" />
       </div>
 
-      <p class="legal">Juego solo para mayores de 18 años. Juega con responsabilidad.</p>
+      <p class="legal">Solcasino.es es una marca del Grupo Starcasino. Juego solo para mayores de 18 años. Juega con responsabilidad. Sin diversión no hay juego.</p>
     </div>
   </footer>
+
+  <div class="stickyCta" aria-hidden="true">
+    <div class="stickyCta__copy">
+      <strong>Hasta 1.800€ + 50 tiradas gratis</strong>
+      <span>+ 5€ por registrarte en la app</span>
+    </div>
+    <a href="#registro" class="stickyCta__button">Regístrate ahora</a>
+  </div>
+
+  <script>
+    const stickyCta = document.querySelector('.stickyCta');
+    const heroSection = document.querySelector('.hero');
+
+    if (stickyCta && heroSection) {
+      const observer = new IntersectionObserver(([entry]) => {
+        stickyCta.classList.toggle('is-visible', !entry.isIntersecting);
+        stickyCta.setAttribute('aria-hidden', entry.isIntersecting ? 'true' : 'false');
+      }, { threshold: 0.08 });
+
+      observer.observe(heroSection);
+    }
+  </script>
 </body>
 </html>
