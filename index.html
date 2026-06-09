@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="steps.css?v=steps-1" />
   <link rel="stylesheet" href="promos.css?v=promos-3" />
   <link rel="stylesheet" href="final-tweaks.css?v=final-5" />
-  <link rel="stylesheet" href="static-logos.css?v=static-1" />
+  <link rel="stylesheet" href="static-logos.css?v=static-2" />
 </head>
 <body>
   <main>
@@ -150,20 +150,7 @@
         </div>
       </div>
 
-      <div class="studioLogoList" aria-label="Estudios disponibles">
-        <img src="assets/estudios/evolution.png" alt="Evolution" />
-        <img src="assets/estudios/pragmatic.png" alt="Pragmatic Play" />
-        <img src="assets/estudios/playtech.png" alt="Playtech" />
-        <img src="assets/estudios/netent.png" alt="NetEnt" />
-        <img src="assets/estudios/play-n-go.png" alt="Play'n GO" />
-        <img src="assets/estudios/red-tiger.png" alt="Red Tiger" />
-        <img src="assets/estudios/relax.png" alt="Relax Gaming" />
-        <img src="assets/estudios/hacksaw.png" alt="Hacksaw" />
-        <img src="assets/estudios/amusnet.png" alt="Amusnet" />
-        <img src="assets/estudios/playson.png" alt="Playson" />
-        <img src="assets/estudios/spribe.png" alt="Spribe" />
-        <img src="assets/estudios/greentube.png" alt="Greentube" />
-      </div>
+      <div class="studioLogoList js-studio-logos" aria-label="Estudios disponibles"></div>
     </section>
 
     <section class="section why">
@@ -275,18 +262,94 @@
       { src: "assets/medios_de_pago/RAPID.png", alt: "Rapid Transfer" }
     ];
 
+    const studioLogos = [
+      { src: "assets/estudios/evolution.png", alt: "Evolution" },
+      { src: "assets/estudios/pragmatic.png", alt: "Pragmatic Play" },
+      { src: "assets/estudios/playtech.png", alt: "Playtech" },
+      { src: "assets/estudios/netent.png", alt: "NetEnt" },
+      { src: "assets/estudios/play-n-go.png", alt: "Play'n GO" },
+      { src: "assets/estudios/red-tiger.png", alt: "Red Tiger" },
+      { src: "assets/estudios/relax.png", alt: "Relax Gaming" },
+      { src: "assets/estudios/hacksaw.png", alt: "Hacksaw" },
+      { src: "assets/estudios/amusnet.png", alt: "Amusnet" },
+      { src: "assets/estudios/playson.png", alt: "Playson" },
+      { src: "assets/estudios/spribe.png", alt: "Spribe" },
+      { src: "assets/estudios/greentube.png", alt: "Greentube" },
+      { src: "assets/estudios/bgaming.png", alt: "BGaming" },
+      { src: "assets/estudios/betsoft.png", alt: "Betsoft" },
+      { src: "assets/estudios/big-time-gaming.png", alt: "Big Time Gaming" },
+      { src: "assets/estudios/blueprint.png", alt: "Blueprint Gaming" },
+      { src: "assets/estudios/booming.png", alt: "Booming Games" },
+      { src: "assets/estudios/egt.png", alt: "EGT" },
+      { src: "assets/estudios/elk.png", alt: "ELK Studios" },
+      { src: "assets/estudios/endorphina.png", alt: "Endorphina" },
+      { src: "assets/estudios/evoplay.png", alt: "Evoplay" },
+      { src: "assets/estudios/fantasma.png", alt: "Fantasma Games" },
+      { src: "assets/estudios/gamomat.png", alt: "Gamomat" },
+      { src: "assets/estudios/gamzix.png", alt: "Gamzix" },
+      { src: "assets/estudios/habanero.png", alt: "Habanero" },
+      { src: "assets/estudios/kalamba.png", alt: "Kalamba Games" },
+      { src: "assets/estudios/leander.png", alt: "Leander Games" },
+      { src: "assets/estudios/microgaming.png", alt: "Microgaming" },
+      { src: "assets/estudios/nolimit-city.png", alt: "Nolimit City" },
+      { src: "assets/estudios/octoplay.png", alt: "Octoplay" },
+      { src: "assets/estudios/peter-and-sons.png", alt: "Peter & Sons" },
+      { src: "assets/estudios/push-gaming.png", alt: "Push Gaming" },
+      { src: "assets/estudios/quickspin.png", alt: "Quickspin" },
+      { src: "assets/estudios/redrake.png", alt: "Red Rake Gaming" },
+      { src: "assets/estudios/spinomenal.png", alt: "Spinomenal" },
+      { src: "assets/estudios/thunderkick.png", alt: "Thunderkick" },
+      { src: "assets/estudios/tom-horn.png", alt: "Tom Horn Gaming" },
+      { src: "assets/estudios/wazdan.png", alt: "Wazdan" },
+      { src: "assets/estudios/yggdrasil.png", alt: "Yggdrasil" },
+      { src: "assets/estudios/1x2-network.png", alt: "1X2 Network" },
+      { src: "assets/estudios/3-oaks.png", alt: "3 Oaks Gaming" },
+      { src: "assets/estudios/4theplayer.png", alt: "4ThePlayer" },
+      { src: "assets/estudios/avatarux.png", alt: "AvatarUX" },
+      { src: "assets/estudios/betixon.png", alt: "Betixon" },
+      { src: "assets/estudios/caleta.png", alt: "Caleta Gaming" },
+      { src: "assets/estudios/iron-dog.png", alt: "Iron Dog Studio" },
+      { src: "assets/estudios/lightning-box.png", alt: "Lightning Box" },
+      { src: "assets/estudios/mascot.png", alt: "Mascot Gaming" },
+      { src: "assets/estudios/netgaming.png", alt: "NetGaming" },
+      { src: "assets/estudios/onetouch.png", alt: "OneTouch" },
+      { src: "assets/estudios/onlyplay.png", alt: "Onlyplay" },
+      { src: "assets/estudios/reel-kingdom.png", alt: "Reel Kingdom" },
+      { src: "assets/estudios/rubyplay.png", alt: "RubyPlay" },
+      { src: "assets/estudios/slingshot.png", alt: "Slingshot Studios" },
+      { src: "assets/estudios/smartsoft.png", alt: "SmartSoft" },
+      { src: "assets/estudios/spearhead.png", alt: "Spearhead Studios" },
+      { src: "assets/estudios/swintt.png", alt: "Swintt" },
+      { src: "assets/estudios/truelab.png", alt: "TrueLab" },
+      { src: "assets/estudios/triple-edge.png", alt: "Triple Edge Studios" },
+      { src: "assets/estudios/voltent.png", alt: "VoltEnt" }
+    ];
+
+    function renderImages(selector, items, onlyExisting = false) {
+      document.querySelectorAll(selector).forEach((container) => {
+        container.replaceChildren();
+
+        items.forEach(({ src, alt }) => {
+          const image = document.createElement("img");
+          image.src = src;
+          image.alt = alt;
+
+          if (onlyExisting) {
+            image.addEventListener("load", () => container.appendChild(image), { once: true });
+            return;
+          }
+
+          container.appendChild(image);
+        });
+      });
+    }
+
     document.querySelectorAll(".js-signup-link").forEach((link) => {
       link.href = signupUrl;
     });
 
-    document.querySelectorAll(".js-payment-methods").forEach((container) => {
-      container.replaceChildren(...paymentMethods.map(({ src, alt }) => {
-        const image = document.createElement("img");
-        image.src = src;
-        image.alt = alt;
-        return image;
-      }));
-    });
+    renderImages(".js-payment-methods", paymentMethods);
+    renderImages(".js-studio-logos", studioLogos, true);
 
     const stickyCta = document.querySelector('.stickyCta');
     const heroSection = document.querySelector('.hero');
