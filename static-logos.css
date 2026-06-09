@@ -1,0 +1,68 @@
+.paymentLogoList,
+.studioLogoList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.paymentLogoList {
+  gap: 22px 34px;
+  padding: 16px 0 4px;
+}
+
+.footerDepositCarousel .paymentLogoList {
+  padding: 0;
+}
+
+.studioLogoList {
+  gap: 24px 38px;
+  padding: 0 0 6px;
+}
+
+.paymentLogoList img,
+.studioLogoList img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(180px, 42vw);
+  max-height: none;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  object-fit: contain;
+}
+
+.studioLogoList img {
+  max-width: min(190px, 42vw);
+}
+
+.paymentBar,
+.footerDepositCarousel,
+.studios {
+  overflow: visible;
+}
+
+@media (max-width: 640px) {
+  .paymentLogoList {
+    gap: 18px 24px;
+    width: min(100% - 28px, 1120px);
+  }
+
+  .studioLogoList {
+    gap: 20px 28px;
+    width: min(100% - 28px, 1120px);
+  }
+
+  .paymentLogoList img {
+    max-width: min(138px, 38vw);
+  }
+
+  .studioLogoList img {
+    max-width: min(150px, 40vw);
+  }
+}
