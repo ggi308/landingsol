@@ -43,7 +43,22 @@
 .studioLogoList img {
   max-width: min(220px, 42vw);
   max-height: 96px;
+  order: 100;
 }
+
+.studioLogoList img[src$="pragmatic.png"] { order: 1; }
+.studioLogoList img[src$="playtech.png"] { order: 2; }
+.studioLogoList img[src$="evolution.png"] { order: 3; }
+.studioLogoList img[src$="play-n-go.png"] { order: 4; }
+.studioLogoList img[src$="hacksaw.png"] { order: 5; }
+.studioLogoList img[src$="playson.png"] { order: 6; }
+.studioLogoList img[src$="push.png"] { order: 7; }
+.studioLogoList img[src$="greentube.png"] { order: 8; }
+.studioLogoList img[src$="elk.png"] { order: 9; }
+.studioLogoList img[src$="ni-limit.png"] { order: 10; }
+.studioLogoList img[src$="netent.png"] { order: 11; }
+.studioLogoList img[src$="mga.png"] { order: 12; }
+.studioLogoList img[src$="spribe.png"] { order: 13; }
 
 .paymentBar,
 .footerDepositCarousel,
