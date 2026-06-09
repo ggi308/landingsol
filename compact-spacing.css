@@ -1,0 +1,105 @@
+.section {
+  padding: 36px 0 !important;
+}
+
+.sectionTitle {
+  margin-bottom: 20px !important;
+}
+
+.sectionTitle h2,
+.finalCta h2 {
+  margin-bottom: 6px !important;
+}
+
+.paymentBar {
+  padding: 14px 0 16px !important;
+}
+
+.paymentTitle {
+  margin-bottom: 8px !important;
+}
+
+.paymentLogoList {
+  padding-top: 8px !important;
+  padding-bottom: 0 !important;
+}
+
+.stepsTitle {
+  margin-bottom: 22px !important;
+}
+
+.stepsCtaWrap {
+  margin-top: 22px !important;
+}
+
+.promos,
+.games,
+.studios,
+.why {
+  padding-top: 38px !important;
+  padding-bottom: 38px !important;
+}
+
+.studioLogoList {
+  padding-bottom: 0 !important;
+}
+
+.finalCtaPsd {
+  padding: 28px 0 !important;
+}
+
+.footer {
+  padding-top: 32px !important;
+  padding-bottom: 30px !important;
+}
+
+.footer__inner {
+  gap: 18px !important;
+}
+
+.footerDepositCarousel {
+  margin: 0 !important;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 28px 0 !important;
+  }
+
+  .sectionTitle {
+    margin-bottom: 16px !important;
+  }
+
+  .paymentBar {
+    padding: 12px 0 14px !important;
+  }
+
+  .stepsTitle {
+    margin-bottom: 18px !important;
+  }
+
+  .stepsCtaWrap {
+    margin-top: 18px !important;
+  }
+
+  .promos,
+  .games,
+  .studios,
+  .why {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .finalCtaPsd {
+    padding: 24px 0 !important;
+  }
+
+  .footer {
+    padding-top: 26px !important;
+    padding-bottom: 26px !important;
+  }
+
+  .footer__inner {
+    gap: 14px !important;
+  }
+}
