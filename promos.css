@@ -56,9 +56,9 @@
   display: block;
   margin: 0;
   color: var(--yellow);
-  font-size: clamp(31px, 2.25vw, 39px);
+  font-size: 29px;
   font-weight: 700;
-  line-height: 0.92;
+  line-height: 0.98;
   letter-spacing: -0.02em;
   text-shadow:
     -2px -2px 0 #050511,
@@ -88,7 +88,7 @@
 
   .promoText h3,
   .promoText h3::after {
-    font-size: 34px;
+    font-size: 29px;
   }
 }
 
@@ -116,8 +116,8 @@
 
   .promoText h3,
   .promoText h3::after {
-    font-size: 21px;
-    line-height: 0.92;
+    font-size: 20px;
+    line-height: 0.98;
     letter-spacing: -0.02em;
     text-shadow:
       -1.5px -1.5px 0 #050511,
@@ -140,6 +140,6 @@
 
   .promoText h3,
   .promoText h3::after {
-    font-size: 19px;
+    font-size: 20px;
   }
 }
