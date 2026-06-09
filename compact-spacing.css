@@ -1,43 +1,47 @@
 .section {
-  padding: 36px 0 !important;
+  padding: 22px 0 !important;
 }
 
 .sectionTitle {
-  margin-bottom: 20px !important;
+  margin-bottom: 12px !important;
 }
 
 .sectionTitle h2,
 .finalCta h2 {
+  margin-bottom: 4px !important;
+}
+
+.eyebrow {
   margin-bottom: 6px !important;
 }
 
 .paymentBar {
-  padding: 14px 0 16px !important;
+  padding: 10px 0 10px !important;
 }
 
 .paymentTitle {
-  margin-bottom: 8px !important;
+  margin-bottom: 4px !important;
 }
 
 .paymentLogoList {
-  padding-top: 8px !important;
+  padding-top: 4px !important;
   padding-bottom: 0 !important;
 }
 
 .stepsTitle {
-  margin-bottom: 22px !important;
+  margin-bottom: 12px !important;
 }
 
 .stepsCtaWrap {
-  margin-top: 22px !important;
+  margin-top: 12px !important;
 }
 
 .promos,
 .games,
 .studios,
 .why {
-  padding-top: 38px !important;
-  padding-bottom: 38px !important;
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
 }
 
 .studioLogoList {
@@ -45,16 +49,16 @@
 }
 
 .finalCtaPsd {
-  padding: 28px 0 !important;
+  padding: 18px 0 !important;
 }
 
 .footer {
-  padding-top: 32px !important;
-  padding-bottom: 30px !important;
+  padding-top: 22px !important;
+  padding-bottom: 22px !important;
 }
 
 .footer__inner {
-  gap: 18px !important;
+  gap: 10px !important;
 }
 
 .footerDepositCarousel {
@@ -63,43 +67,47 @@
 
 @media (max-width: 640px) {
   .section {
-    padding: 28px 0 !important;
+    padding: 18px 0 !important;
   }
 
   .sectionTitle {
-    margin-bottom: 16px !important;
+    margin-bottom: 10px !important;
   }
 
   .paymentBar {
-    padding: 12px 0 14px !important;
+    padding: 8px 0 8px !important;
+  }
+
+  .paymentTitle {
+    margin-bottom: 2px !important;
   }
 
   .stepsTitle {
-    margin-bottom: 18px !important;
+    margin-bottom: 10px !important;
   }
 
   .stepsCtaWrap {
-    margin-top: 18px !important;
+    margin-top: 10px !important;
   }
 
   .promos,
   .games,
   .studios,
   .why {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
   }
 
   .finalCtaPsd {
-    padding: 24px 0 !important;
+    padding: 16px 0 !important;
   }
 
   .footer {
-    padding-top: 26px !important;
-    padding-bottom: 26px !important;
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
   }
 
   .footer__inner {
-    gap: 14px !important;
+    gap: 8px !important;
   }
 }
