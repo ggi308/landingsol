@@ -13,10 +13,6 @@
   padding: 16px 0 4px;
 }
 
-.footerDepositCarousel .paymentLogoList {
-  padding: 0;
-}
-
 .studioLogoList {
   gap: 30px 46px;
   padding: 0 0 6px;
@@ -59,6 +55,7 @@
 
   .paymentLogoList {
     gap: 18px 24px;
+    padding: 16px 0 4px;
   }
 
   .studioLogoList {
