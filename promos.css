@@ -44,11 +44,11 @@
   right: 16px;
   bottom: 14px;
   z-index: 1;
-  height: 156px;
+  height: 146px;
   display: grid;
-  grid-template-rows: 74px 1fr;
+  grid-template-rows: 82px 1fr;
   align-items: start;
-  padding: 18px 16px 16px;
+  padding: 16px 16px 14px;
   border: 1px solid rgba(248, 247, 0, 0.34);
   border-radius: 17px;
   background: rgba(5, 5, 18, 0.74);
@@ -57,20 +57,20 @@
 }
 
 .promoText h3 {
-  display: flex;
-  align-items: flex-start;
+  display: block;
   margin: 0;
   color: var(--yellow);
-  font-size: clamp(29px, 2.25vw, 38px);
+  font-size: clamp(28px, 2.05vw, 34px);
   font-weight: 700;
-  line-height: 0.95;
+  line-height: 0.92;
+  letter-spacing: -0.015em;
 }
 
 .promoText p {
   align-self: start;
   margin: 0;
   color: #ffffff;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.05;
 }
 
@@ -81,16 +81,16 @@
   }
 
   .promoText {
-    height: 154px;
-    grid-template-rows: 72px 1fr;
+    height: 148px;
+    grid-template-rows: 82px 1fr;
   }
 
   .promoText h3 {
-    font-size: 34px;
+    font-size: 31px;
   }
 
   .promoText p {
-    font-size: 21px;
+    font-size: 19px;
   }
 }
 
@@ -115,19 +115,20 @@
     right: 9px;
     bottom: 9px;
     height: 118px;
-    grid-template-rows: 58px 1fr;
-    padding: 12px 10px 10px;
+    grid-template-rows: 64px 1fr;
+    padding: 11px 10px 10px;
     border-radius: 13px;
   }
 
   .promoText h3 {
-    font-size: 23px;
+    font-size: 19px;
     line-height: 0.92;
+    letter-spacing: -0.02em;
   }
 
   .promoText p {
-    font-size: 16px;
-    line-height: 1;
+    font-size: 14px;
+    line-height: 1.04;
   }
 }
 
@@ -143,14 +144,14 @@
 
   .promoText {
     height: 112px;
-    grid-template-rows: 54px 1fr;
+    grid-template-rows: 60px 1fr;
   }
 
   .promoText h3 {
-    font-size: 21px;
+    font-size: 17px;
   }
 
   .promoText p {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
