@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="steps.css?v=steps-1" />
   <link rel="stylesheet" href="promos.css?v=promos-3" />
   <link rel="stylesheet" href="final-tweaks.css?v=final-5" />
+  <link rel="stylesheet" href="static-logos.css?v=static-1" />
 </head>
 <body>
   <main>
@@ -29,7 +30,7 @@
               <span class="heroBadge heroBadge--purple">✓ App disponible</span>
             </div>
 
-            <a href="https://auth.solcasino.es/login?state=hKFo2SBPX2pqdWJJNENVUmV6UEw0aTBjUU93dEJCREFCcUF0NaFupWxvZ2luo3RpZNkgb1hsYktvNHNrT3JXcHNwQlM2UGgzQTJMdWFGUFlOeUKjY2lk2SBITDVEZU8xMnhOM2MzdFFycXZOZU0zaEZIY2wzaDdKTA&client=HL5DeO12xN3c3tQrqvNeM3hFHcl3h7JL&protocol=oauth2&scope=openid%20profile%20email%20offline_access&response_type=code&audience=https%3A%2F%2Fapi.solcasino.es%2F&redirect_uri=https%3A%2F%2Fsolcasino.es%2Fauth%2Fcallback&screen_hint=signup&ui_locales=es&connection=solcasino-es-prd&contentfulTenant=Solcasino&baseUrl=https%3A%2F%2Fsolcasino.es&appBaseUrl=https%3A%2F%2Fsolcasino.es&themeEnabled=1&themeMode=dark&locale=es&lastUsedLogin=database&actual_user_agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F149.0.0.0%20Safari%2F537.36&actual_ip=10.21.1.201&country=ES&deviceid=e75f3e10d560928393be779d8e701bb7&deviceType=desktop&language=ES&platformType=Web&code_challenge=7ZRkJuszhgeNayLKmhwkAJ5XdDp6ZSddrSCzM8qk_DQ&code_challenge_method=S256" class="btn heroCta">Regístrate ahora</a>
+            <a href="#registro" class="btn heroCta js-signup-link">Regístrate ahora</a>
           </div>
 
           <div class="hero__visual">
@@ -41,37 +42,7 @@
 
     <section class="paymentBar" aria-label="Métodos de depósito">
       <h2 class="paymentTitle">Métodos de depósito</h2>
-
-      <div class="paymentMarquee paymentMarquee--top">
-        <div class="paymentTrack seamlessTrack">
-          <div class="paymentGroup">
-            <img src="assets/medios_de_pago/VISA.png" alt="Visa" />
-            <img src="assets/medios_de_pago/MASTERCARD.png" alt="Mastercard" />
-            <img src="assets/medios_de_pago/BIZUM.png" alt="Bizum" />
-            <img src="assets/medios_de_pago/PAYPAL.png" alt="PayPal" />
-            <img src="assets/medios_de_pago/SKRILL.png" alt="Skrill" />
-            <img src="assets/medios_de_pago/NETELLER.png" alt="Neteller" />
-            <img src="assets/medios_de_pago/PAYSAFE.png" alt="Paysafe" />
-            <img src="assets/medios_de_pago/TRANSFERENCIA.png" alt="Transferencia" />
-            <img src="assets/medios_de_pago/APPLE.png" alt="Apple Pay" />
-            <img src="assets/medios_de_pago/GOOGLE.png" alt="Google Pay" />
-            <img src="assets/medios_de_pago/RAPID.png" alt="Rapid Transfer" />
-          </div>
-          <div class="paymentGroup" aria-hidden="true">
-            <img src="assets/medios_de_pago/VISA.png" alt="" />
-            <img src="assets/medios_de_pago/MASTERCARD.png" alt="" />
-            <img src="assets/medios_de_pago/BIZUM.png" alt="" />
-            <img src="assets/medios_de_pago/PAYPAL.png" alt="" />
-            <img src="assets/medios_de_pago/SKRILL.png" alt="" />
-            <img src="assets/medios_de_pago/NETELLER.png" alt="" />
-            <img src="assets/medios_de_pago/PAYSAFE.png" alt="" />
-            <img src="assets/medios_de_pago/TRANSFERENCIA.png" alt="" />
-            <img src="assets/medios_de_pago/APPLE.png" alt="" />
-            <img src="assets/medios_de_pago/GOOGLE.png" alt="" />
-            <img src="assets/medios_de_pago/RAPID.png" alt="" />
-          </div>
-        </div>
-      </div>
+      <div class="paymentLogoList js-payment-methods"></div>
     </section>
 
     <section class="section steps">
@@ -109,7 +80,7 @@
         </div>
 
         <div class="stepsCtaWrap">
-          <a href="https://auth.solcasino.es/login?state=hKFo2SBPX2pqdWJJNENVUmV6UEw0aTBjUU93dEJCREFCcUF0NaFupWxvZ2luo3RpZNkgb1hsYktvNHNrT3JXcHNwQlM2UGgzQTJMdWFGUFlOeUKjY2lk2SBITDVEZU8xMnhOM2MzdFFycXZOZU0zaEZIY2wzaDdKTA&client=HL5DeO12xN3c3tQrqvNeM3hFHcl3h7JL&protocol=oauth2&scope=openid%20profile%20email%20offline_access&response_type=code&audience=https%3A%2F%2Fapi.solcasino.es%2F&redirect_uri=https%3A%2F%2Fsolcasino.es%2Fauth%2Fcallback&screen_hint=signup&ui_locales=es&connection=solcasino-es-prd&contentfulTenant=Solcasino&baseUrl=https%3A%2F%2Fsolcasino.es&appBaseUrl=https%3A%2F%2Fsolcasino.es&themeEnabled=1&themeMode=dark&locale=es&lastUsedLogin=database&actual_user_agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F149.0.0.0%20Safari%2F537.36&actual_ip=10.21.1.201&country=ES&deviceid=e75f3e10d560928393be779d8e701bb7&deviceType=desktop&language=ES&platformType=Web&code_challenge=7ZRkJuszhgeNayLKmhwkAJ5XdDp6ZSddrSCzM8qk_DQ&code_challenge_method=S256" class="btn stepsCta">Empieza ahora</a>
+          <a href="#registro" class="btn stepsCta js-signup-link">Empieza ahora</a>
         </div>
       </div>
     </section>
@@ -179,43 +150,19 @@
         </div>
       </div>
 
-      <div class="studioCarousel" aria-label="Estudios disponibles">
-        <div class="studioTrack studioTrack--top seamlessTrack">
-          <div class="studioGroup">
-            <img src="assets/estudios/evolution.png" alt="Evolution" />
-            <img src="assets/estudios/pragmatic.png" alt="Pragmatic Play" />
-            <img src="assets/estudios/playtech.png" alt="Playtech" />
-            <img src="assets/estudios/netent.png" alt="NetEnt" />
-            <img src="assets/estudios/play-n-go.png" alt="Play'n GO" />
-            <img src="assets/estudios/red-tiger.png" alt="Red Tiger" />
-          </div>
-          <div class="studioGroup" aria-hidden="true">
-            <img src="assets/estudios/evolution.png" alt="" />
-            <img src="assets/estudios/pragmatic.png" alt="" />
-            <img src="assets/estudios/playtech.png" alt="" />
-            <img src="assets/estudios/netent.png" alt="" />
-            <img src="assets/estudios/play-n-go.png" alt="" />
-            <img src="assets/estudios/red-tiger.png" alt="" />
-          </div>
-        </div>
-        <div class="studioTrack studioTrack--bottom seamlessTrack seamlessTrack--reverse">
-          <div class="studioGroup">
-            <img src="assets/estudios/relax.png" alt="Relax Gaming" />
-            <img src="assets/estudios/hacksaw.png" alt="Hacksaw" />
-            <img src="assets/estudios/amusnet.png" alt="Amusnet" />
-            <img src="assets/estudios/playson.png" alt="Playson" />
-            <img src="assets/estudios/spribe.png" alt="Spribe" />
-            <img src="assets/estudios/greentube.png" alt="Greentube" />
-          </div>
-          <div class="studioGroup" aria-hidden="true">
-            <img src="assets/estudios/relax.png" alt="" />
-            <img src="assets/estudios/hacksaw.png" alt="" />
-            <img src="assets/estudios/amusnet.png" alt="" />
-            <img src="assets/estudios/playson.png" alt="" />
-            <img src="assets/estudios/spribe.png" alt="" />
-            <img src="assets/estudios/greentube.png" alt="" />
-          </div>
-        </div>
+      <div class="studioLogoList" aria-label="Estudios disponibles">
+        <img src="assets/estudios/evolution.png" alt="Evolution" />
+        <img src="assets/estudios/pragmatic.png" alt="Pragmatic Play" />
+        <img src="assets/estudios/playtech.png" alt="Playtech" />
+        <img src="assets/estudios/netent.png" alt="NetEnt" />
+        <img src="assets/estudios/play-n-go.png" alt="Play'n GO" />
+        <img src="assets/estudios/red-tiger.png" alt="Red Tiger" />
+        <img src="assets/estudios/relax.png" alt="Relax Gaming" />
+        <img src="assets/estudios/hacksaw.png" alt="Hacksaw" />
+        <img src="assets/estudios/amusnet.png" alt="Amusnet" />
+        <img src="assets/estudios/playson.png" alt="Playson" />
+        <img src="assets/estudios/spribe.png" alt="Spribe" />
+        <img src="assets/estudios/greentube.png" alt="Greentube" />
       </div>
     </section>
 
@@ -252,7 +199,7 @@
         <div class="finalCtaOffer">
           <strong>Hasta 1.800€ + 50 tiradas gratis</strong>
         </div>
-        <a href="https://auth.solcasino.es/login?state=hKFo2SBPX2pqdWJJNENVUmV6UEw0aTBjUU93dEJCREFCcUF0NaFupWxvZ2luo3RpZNkgb1hsYktvNHNrT3JXcHNwQlM2UGgzQTJMdWFGUFlOeUKjY2lk2SBITDVEZU8xMnhOM2MzdFFycXZOZU0zaEZIY2wzaDdKTA&client=HL5DeO12xN3c3tQrqvNeM3hFHcl3h7JL&protocol=oauth2&scope=openid%20profile%20email%20offline_access&response_type=code&audience=https%3A%2F%2Fapi.solcasino.es%2F&redirect_uri=https%3A%2F%2Fsolcasino.es%2Fauth%2Fcallback&screen_hint=signup&ui_locales=es&connection=solcasino-es-prd&contentfulTenant=Solcasino&baseUrl=https%3A%2F%2Fsolcasino.es&appBaseUrl=https%3A%2F%2Fsolcasino.es&themeEnabled=1&themeMode=dark&locale=es&lastUsedLogin=database&actual_user_agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F149.0.0.0%20Safari%2F537.36&actual_ip=10.21.1.201&country=ES&deviceid=e75f3e10d560928393be779d8e701bb7&deviceType=desktop&language=ES&platformType=Web&code_challenge=7ZRkJuszhgeNayLKmhwkAJ5XdDp6ZSddrSCzM8qk_DQ&code_challenge_method=S256" class="btn finalGreenBtn">Regístrate ahora</a>
+        <a href="#registro" class="btn finalGreenBtn js-signup-link">Regístrate ahora</a>
       </div>
     </section>
   </main>
@@ -274,36 +221,7 @@
       </div>
 
       <div class="footerDepositCarousel" aria-label="Métodos de pago disponibles">
-        <div class="paymentMarquee paymentMarquee--top">
-          <div class="paymentTrack seamlessTrack">
-            <div class="paymentGroup">
-              <img src="assets/medios_de_pago/VISA.png" alt="Visa" />
-              <img src="assets/medios_de_pago/MASTERCARD.png" alt="Mastercard" />
-              <img src="assets/medios_de_pago/BIZUM.png" alt="Bizum" />
-              <img src="assets/medios_de_pago/PAYPAL.png" alt="PayPal" />
-              <img src="assets/medios_de_pago/SKRILL.png" alt="Skrill" />
-              <img src="assets/medios_de_pago/NETELLER.png" alt="Neteller" />
-              <img src="assets/medios_de_pago/PAYSAFE.png" alt="Paysafe" />
-              <img src="assets/medios_de_pago/TRANSFERENCIA.png" alt="Transferencia" />
-              <img src="assets/medios_de_pago/APPLE.png" alt="Apple Pay" />
-              <img src="assets/medios_de_pago/GOOGLE.png" alt="Google Pay" />
-              <img src="assets/medios_de_pago/RAPID.png" alt="Rapid Transfer" />
-            </div>
-            <div class="paymentGroup" aria-hidden="true">
-              <img src="assets/medios_de_pago/VISA.png" alt="" />
-              <img src="assets/medios_de_pago/MASTERCARD.png" alt="" />
-              <img src="assets/medios_de_pago/BIZUM.png" alt="" />
-              <img src="assets/medios_de_pago/PAYPAL.png" alt="" />
-              <img src="assets/medios_de_pago/SKRILL.png" alt="" />
-              <img src="assets/medios_de_pago/NETELLER.png" alt="" />
-              <img src="assets/medios_de_pago/PAYSAFE.png" alt="" />
-              <img src="assets/medios_de_pago/TRANSFERENCIA.png" alt="" />
-              <img src="assets/medios_de_pago/APPLE.png" alt="" />
-              <img src="assets/medios_de_pago/GOOGLE.png" alt="" />
-              <img src="assets/medios_de_pago/RAPID.png" alt="" />
-            </div>
-          </div>
-        </div>
+        <div class="paymentLogoList js-payment-methods"></div>
       </div>
       
       <div class="responsible">
@@ -337,16 +255,37 @@
     <div class="stickyCta__copy">
       <strong>Hasta 1.800€ + 50 tiradas gratis</strong>
     </div>
-    <a href="https://auth.solcasino.es/login?state=hKFo2SBPX2pqdWJJNENVUmV6UEw0aTBjUU93dEJCREFCcUF0NaFupWxvZ2luo3RpZNkgb1hsYktvNHNrT3JXcHNwQlM2UGgzQTJMdWFGUFlOeUKjY2lk2SBITDVEZU8xMnhOM2MzdFFycXZOZU0zaEZIY2wzaDdKTA&client=HL5DeO12xN3c3tQrqvNeM3hFHcl3h7JL&protocol=oauth2&scope=openid%20profile%20email%20offline_access&response_type=code&audience=https%3A%2F%2Fapi.solcasino.es%2F&redirect_uri=https%3A%2F%2Fsolcasino.es%2Fauth%2Fcallback&screen_hint=signup&ui_locales=es&connection=solcasino-es-prd&contentfulTenant=Solcasino&baseUrl=https%3A%2F%2Fsolcasino.es&appBaseUrl=https%3A%2F%2Fsolcasino.es&themeEnabled=1&themeMode=dark&locale=es&lastUsedLogin=database&actual_user_agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F149.0.0.0%20Safari%2F537.36&actual_ip=10.21.1.201&country=ES&deviceid=e75f3e10d560928393be779d8e701bb7&deviceType=desktop&language=ES&platformType=Web&code_challenge=7ZRkJuszhgeNayLKmhwkAJ5XdDp6ZSddrSCzM8qk_DQ&code_challenge_method=S256" class="stickyCta__button">Regístrate ahora</a>
+    <a href="#registro" class="stickyCta__button js-signup-link">Regístrate ahora</a>
   </div>
 
   <script>
-    document.querySelectorAll('.seamlessTrack').forEach((track) => {
-      const groups = Array.from(track.children);
-      if (groups.length === 2) {
-        track.appendChild(groups[0].cloneNode(true));
-        track.appendChild(groups[1].cloneNode(true));
-      }
+    const signupUrl = "https://auth.solcasino.es/login?state=hKFo2SBPX2pqdWJJNENVUmV6UEw0aTBjUU93dEJCREFCcUF0NaFupWxvZ2luo3RpZNkgb1hsYktvNHNrT3JXcHNwQlM2UGgzQTJMdWFGUFlOeUKjY2lk2SBITDVEZU8xMnhOM2MzdFFycXZOZU0zaEZIY2wzaDdKTA&client=HL5DeO12xN3c3tQrqvNeM3hFHcl3h7JL&protocol=oauth2&scope=openid%20profile%20email%20offline_access&response_type=code&audience=https%3A%2F%2Fapi.solcasino.es%2F&redirect_uri=https%3A%2F%2Fsolcasino.es%2Fauth%2Fcallback&screen_hint=signup&ui_locales=es&connection=solcasino-es-prd&contentfulTenant=Solcasino&baseUrl=https%3A%2F%2Fsolcasino.es&appBaseUrl=https%3A%2F%2Fsolcasino.es&themeEnabled=1&themeMode=dark&locale=es&lastUsedLogin=database&actual_user_agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F149.0.0.0%20Safari%2F537.36&actual_ip=10.21.1.201&country=ES&deviceid=e75f3e10d560928393be779d8e701bb7&deviceType=desktop&language=ES&platformType=Web&code_challenge=7ZRkJuszhgeNayLKmhwkAJ5XdDp6ZSddrSCzM8qk_DQ&code_challenge_method=S256";
+
+    const paymentMethods = [
+      { src: "assets/medios_de_pago/VISA.png", alt: "Visa" },
+      { src: "assets/medios_de_pago/MASTERCARD.png", alt: "Mastercard" },
+      { src: "assets/medios_de_pago/BIZUM.png", alt: "Bizum" },
+      { src: "assets/medios_de_pago/PAYPAL.png", alt: "PayPal" },
+      { src: "assets/medios_de_pago/SKRILL.png", alt: "Skrill" },
+      { src: "assets/medios_de_pago/NETELLER.png", alt: "Neteller" },
+      { src: "assets/medios_de_pago/PAYSAFE.png", alt: "Paysafe" },
+      { src: "assets/medios_de_pago/TRANSFERENCIA.png", alt: "Transferencia" },
+      { src: "assets/medios_de_pago/APPLE.png", alt: "Apple Pay" },
+      { src: "assets/medios_de_pago/GOOGLE.png", alt: "Google Pay" },
+      { src: "assets/medios_de_pago/RAPID.png", alt: "Rapid Transfer" }
+    ];
+
+    document.querySelectorAll(".js-signup-link").forEach((link) => {
+      link.href = signupUrl;
+    });
+
+    document.querySelectorAll(".js-payment-methods").forEach((container) => {
+      container.replaceChildren(...paymentMethods.map(({ src, alt }) => {
+        const image = document.createElement("img");
+        image.src = src;
+        image.alt = alt;
+        return image;
+      }));
     });
 
     const stickyCta = document.querySelector('.stickyCta');
