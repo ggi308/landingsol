@@ -13,6 +13,10 @@
   padding: 16px 0 4px;
 }
 
+.footerDepositCarousel {
+  width: 100%;
+}
+
 .studioLogoList {
   gap: 30px 46px;
   padding: 0 0 6px;
@@ -48,23 +52,37 @@
 }
 
 @media (max-width: 640px) {
-  .paymentLogoList,
-  .studioLogoList {
-    width: min(100% - 28px, 1280px);
-  }
-
   .paymentLogoList {
-    gap: 18px 24px;
-    padding: 16px 0 4px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 12px 14px;
+    width: min(100% - 28px, 392px);
+    padding: 10px 0 0;
   }
 
-  .studioLogoList {
-    gap: 22px 30px;
+  .footerDepositCarousel .paymentLogoList {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px 14px;
+    width: min(100% - 28px, 392px);
+    padding: 10px 0 0;
   }
 
   .paymentLogoList img {
-    max-width: min(138px, 38vw);
-    max-height: 68px;
+    width: 100%;
+    max-width: 108px;
+    max-height: 56px;
+  }
+
+  .paymentLogoList img:last-child {
+    grid-column: 2;
+  }
+
+  .studioLogoList {
+    width: min(100% - 28px, 1280px);
+    gap: 22px 30px;
   }
 
   .studioLogoList img {
