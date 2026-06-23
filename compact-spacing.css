@@ -65,6 +65,96 @@
   margin: 8px 0 !important;
 }
 
+:root {
+  --yellow: #87F83D;
+}
+
+.hero .eyebrow {
+  font-size: 0 !important;
+  margin-bottom: 14px !important;
+}
+
+.hero .eyebrow::after {
+  content: "Bono de bienvenida de apuestas";
+  color: #87F83D;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: 0 !important;
+  letter-spacing: -0.04em;
+}
+
+.hero h1::before {
+  content: "Consigue el 100% de tu 1ª apuesta hasta 30€ en freebet";
+  display: block;
+  max-width: 760px;
+  color: #87F83D;
+  font-size: clamp(44px, 5.6vw, 78px);
+  font-weight: 700;
+  line-height: 0.98;
+  text-shadow: 0 0 28px rgba(135, 248, 61, 0.35);
+  text-transform: uppercase;
+}
+
+h1 span,
+.heroYellow,
+.paymentTitle,
+.promoText h3,
+.promoText h3::after,
+.eyebrow {
+  color: #87F83D !important;
+}
+
+h1 span,
+.heroYellow,
+.promoText h3,
+.promoText h3::after {
+  text-shadow:
+    -2px -2px 0 #050511,
+     2px -2px 0 #050511,
+    -2px  2px 0 #050511,
+     2px  2px 0 #050511,
+     0 5px 12px rgba(0, 0, 0, 0.85),
+     0 0 28px rgba(135, 248, 61, 0.28) !important;
+}
+
+.heroBadge {
+  border-color: #87F83D !important;
+  color: #87F83D !important;
+  box-shadow: 0 0 15px rgba(135, 248, 61, 0.18) !important;
+}
+
+.stepCard {
+  border-color: rgba(135, 248, 61, 0.32) !important;
+  background:
+    radial-gradient(circle at 50% 22%, rgba(135, 248, 61, 0.12), transparent 8rem),
+    linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.025)),
+    #141032 !important;
+}
+
+.stepCard:hover {
+  border-color: rgba(135, 248, 61, 0.72) !important;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.44), 0 0 26px rgba(135, 248, 61, 0.18) !important;
+}
+
+.stepIconWrap {
+  border-color: rgba(135, 248, 61, 0.5) !important;
+  background:
+    radial-gradient(circle at 50% 38%, rgba(135, 248, 61, 0.2), transparent 58%),
+    rgba(5, 5, 18, 0.78) !important;
+  box-shadow: 0 0 24px rgba(135, 248, 61, 0.12), inset 0 0 20px rgba(255,255,255,0.05) !important;
+}
+
+.stepsProcess::before {
+  background: linear-gradient(90deg, transparent, rgba(135, 248, 61, 0.82), rgba(49, 232, 79, 0.82), transparent) !important;
+  box-shadow: 0 0 18px rgba(135, 248, 61, 0.28) !important;
+}
+
 @media (max-width: 640px) {
   .section {
     padding: 42px 0 !important;
@@ -118,5 +208,13 @@
 
   .footer__inner {
     gap: 18px !important;
+  }
+
+  .hero .eyebrow::after {
+    font-size: 16px;
+  }
+
+  .hero h1::before {
+    font-size: clamp(38px, 13vw, 58px);
   }
 }
